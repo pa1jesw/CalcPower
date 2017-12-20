@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    tools:context="com.pa1.calcpower.MainActivity">
+
+        <TextView
+            android:id="@+id/tvof"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="^"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/etPercent"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/etNumber"
+            android:layout_alignBottom="@+id/etNumber"
+            android:layout_toLeftOf="@+id/tvof"
+            android:layout_toStartOf="@+id/tvof"
+            android:ems="10"
+            android:hint="0"
+            android:inputType="number"
+            android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvof"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_toEndOf="@+id/tvIs"
+        android:layout_toRightOf="@+id/tvIs"
+        android:ems="10"
+        android:hint="0"
+        android:inputType="number"
+        android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tvAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/etPercent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="60dp" />
+
+    <TextView
+        android:id="@+id/tvIs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etPercent"
+        android:layout_centerHorizontal="true"
+        android:text="Is"
+
+        android:textColor="@color/colorPrimary"
+        android:textSize="45dp" />
+
+        <Button
+            android:id="@+id/btnCal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etPercent"
+            android:theme="@style/AlertDialog.AppCompat.Light"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="69dp"
+            android:text="Calculate"
+    android:textColor="@color/colorAccent"
+            android:textSize="40dp" />
+
+
+    </RelativeLayout>
